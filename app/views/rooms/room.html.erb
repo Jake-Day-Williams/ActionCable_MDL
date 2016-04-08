@@ -1,6 +1,6 @@
 <div class="panel panel-default full-height">
 	<div class="panel-heading">
-		Hey, <%= current_user  %>,	welcome to <%= @room.name  %>
+		Hey, <%= current_user  %>,	You are now in <%= @room.name  %>
 		<div class="pull-right" id="chat-status">
 
 		</div>
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<div class="panel-footer chat-text-input <%= hex %>">  
-		<input id="message-input" class="form-control" data-behaviour="speaker" placeholder="Type Message, Press Enter to Send"/>
+		<input id="message-input" class="form-control" data-behaviour="speaker" placeholder="Say something. Press Enter to Send"/>
 	</div>
 </div>
 </div>

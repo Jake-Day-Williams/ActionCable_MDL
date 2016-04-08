@@ -1,7 +1,7 @@
 <div class="panel panel-default set-scroll">
   <div class="panel-body">
     <div>
-      <h3 class= "text-center"> ActionCable Chats</h3>
+      <h3 class= "text-center"> ActionCable Chat Rooms </h3>
     </div>
     <%= form_for lambda{ @room ||= Room.new }.call, url: {action: 'enter'}, html: {class: 'form-horizontal'} do |f|  %>
     <div class="form-group">
@@ -25,14 +25,14 @@
     </div>
 
     <div class="panel-footer full-height">
-    <h4 class= "text-center"> Available Chat Rooms</h4>
+    <h4 class= "text-center">Chat Rooms</h4>
     <% @rooms = Room.all %>
         <% if @rooms.any?  %>
         <ul class="list-group">
           <%= render @rooms  %>
         </ul>
         <% else  %>
-        No Rooms yet
+        No Public Rooms Available
         <% end  %>
     
   </div>
